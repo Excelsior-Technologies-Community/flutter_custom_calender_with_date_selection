@@ -35,7 +35,7 @@ Add dependency in your pubspec.yaml
 yaml
 dependencies:
   flutter_custom_calendar_with_date_selection:
-    path: https://github.com/your-username/flutter_custom_calendar_with_date_selection
+    path: https://github.com/Excelsior-Technologies-Community/flutter_custom_calender_with_date_selection/tree/stage
 ```
 Then run:
 ```
