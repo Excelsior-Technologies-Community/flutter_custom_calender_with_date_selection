@@ -100,8 +100,6 @@ class _CustomCalendarState extends State<CustomCalendar> {
 
             if (item.isSelected) {
               bgColor = widget.style.selectedColor;
-            } else if (widget.controller.isInRange(item.date)) {
-              bgColor = widget.style.selectedColor.withOpacity(0.3);
             } else if (item.isToday) {
               bgColor = widget.style.todayColor;
             }

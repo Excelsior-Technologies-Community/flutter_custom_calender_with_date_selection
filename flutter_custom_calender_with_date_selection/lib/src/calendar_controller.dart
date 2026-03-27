@@ -22,19 +22,11 @@ class CalendarController extends ChangeNotifier {
   }
 
   void selectDate(DateTime date) {
-    if (_startDate == null || (_startDate != null && _endDate != null)) {
-      _startDate = date;
-      _endDate = null;
-    } else {
-      if (date.isBefore(_startDate!)) {
-        _endDate = _startDate;
-        _startDate = date;
-      } else {
-        _endDate = date;
-      }
-    }
+    _startDate = date;
+    _endDate = null;
     notifyListeners();
   }
+
 
   bool isInRange(DateTime date) {
     if (_startDate == null || _endDate == null) return false;
